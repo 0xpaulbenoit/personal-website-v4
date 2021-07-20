@@ -1,82 +1,83 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import backgroundPic from '../public/background.jpeg'
+import profilePic from '../public/paul.jpg'
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <main>
+        <div className="relative">
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+          <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div className="absolute inset-0">
+              <Image
+                src={backgroundPic}
+                alt="Photo which I took of the Tetons"
+                layout="fill"
+                objectFit="cover"
+              />
+              <div className="absolute inset-0 bg-gray-700 mix-blend-multiply"></div>
+            </div>
+            <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex justify-center">
+              <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white" id="bio-card">
+                <div className="w-32 h-32 rounded-full mx-auto mt-2">
+                  <Image
+                    src={profilePic}
+                    alt="headshot of Paul Benoit"
+                  />
+                </div>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+                <div className="px-6 py-4">
+                  <p className="text-gray-700 text-lg">
+                    Greetings,
+                  </p>
+                  <p className="text-gray-700 text-lg mt-2">
+                    My name is Paul Benoit, and I build cybersecurity software.
+                  </p>
+                  <p className="text-gray-700 text-lg mt-2">
+                    I work as a Staff Software Engineer for the 
+                    <a href="https://www.paloaltonetworks.com/cortex/managed-threat-hunting"
+                      className="pl-1 pr-1 text-blue-500 hover:underline">
+                      Managed Threat Hunting
+                    </a>
+                    team at Palo Alto Networks.
+                  </p>
+                  <p className="text-gray-700 text-lg mt-2">
+                    Here is
+                    <a href="https://paul-benoit-public.s3.amazonaws.com/paul_benoit_resume.pdf"
+                      className="text-blue-500 hover:underline pl-1">my resume.</a>
+                    <a href="mailto:paul@paulbenoit.com"
+                      className="text-blue-500 hover:underline pl-1">Contact me</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+          <div className="relative max-w-7xl mx-auto">
+            <div className="text-center">
+              <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+                From The Blog
+              </h2>
+              <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                My projects and things I've learned. 
+              </p>
+            </div>
+            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            </div>
+            <div className="mt-7 text-center">
+              <a href="/posts"
+                className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-base 
+                font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2
+                focus:ring-offset-2 focus:ring-green-500">View More</a>
+            </div>
+          </div>
         </div>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
     </div>
   )
 }

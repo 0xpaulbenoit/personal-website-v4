@@ -1,0 +1,26 @@
+.markdown {
+  @apply prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-3 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-3 leading-snug;
+}
+
+.markdown img {
+  @apply rounded-lg
+}
+
+.markdown em {
+  @apply text-red-400 font-mono font-medium
+}
