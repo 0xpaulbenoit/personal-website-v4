@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import backgroundPic from '../public/background.jpeg'
 import profilePic from '../public/paul.jpg'
+import { getFeaturedPosts } from '../lib/api'
+import PostPreview from '../components/post-preview'
 
 
-export default function Home() {
+export default function Home({ featuredPosts }) {
   return (
     <div>
       <main>
@@ -68,6 +70,15 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+              {featuredPosts.map((post) => (
+                  <PostPreview
+                    key={post.slug}
+                    title={post.title}
+                    coverImage={post.coverImage}
+                    date={post.date}
+                    slug={post.slug}
+                  />
+                ))}
             </div>
             <div className="mt-7 text-center">
               <a href="/posts"
@@ -80,4 +91,17 @@ export default function Home() {
       </main>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const featuredPosts = getFeaturedPosts([
+    'title',
+    'date',
+    'slug',
+    'coverImage',
+  ])
+
+  return {
+    props: { featuredPosts },
+  }
 }
