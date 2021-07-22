@@ -1,4 +1,3 @@
-import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
@@ -7,31 +6,31 @@ export default function PostPreview({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
   slug,
 }) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
+    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div className="flex-shrink-0">
+        <img 
+          className="h-48 w-full object-cover"
+          alt={`blog: ${title}`}
           src={coverImage}
-          height={278}
-          width={556}
         />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
+      <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div className="flex-1">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="text-xl font-semibold text-gray-900">{title}</a>
+            </Link>
+          </div>
+        <div className="mt-3 flex items-center">
+          <div className="ml-3">
+            <div className="flex space-x-1 text-sm text-gray-500">
+              <DateFormatter dateString={date} />
+            </div>
+          </div>
+        </div>
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   )
 }

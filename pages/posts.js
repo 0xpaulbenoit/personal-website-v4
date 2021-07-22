@@ -1,23 +1,32 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import Intro from '../components/intro'
+import PostPreview from '../components/post-preview'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import PageTitle from '../components/page-title'
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
         <Head>
-          <title>Posts Page</title>
+          <PageTitle>Blog Posts</PageTitle>
         </Head>
-        <Container>
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+        <div class="relative bg-gray-50 pt-10 pb-10 px-4 sm:px-6 lg:pt-15 lg:pb-15 lg:px-8">
+          <div class="relative max-w-7xl mx-auto">
+            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+              {allPosts.map((post) => (
+                <PostPreview
+                  key={post.slug}
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  slug={post.slug}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </Layout>
     </>
   )
@@ -28,9 +37,7 @@ export async function getStaticProps() {
     'title',
     'date',
     'slug',
-    'author',
     'coverImage',
-    'excerpt',
   ])
 
   return {

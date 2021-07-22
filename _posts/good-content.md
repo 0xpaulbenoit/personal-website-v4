@@ -1,6 +1,5 @@
 ---
 title: "Good Content"
-excerpt: ""
 date: '2021-06-16'
 coverImage: "/blog/rabbit-hole.jpg"
 ogImage:

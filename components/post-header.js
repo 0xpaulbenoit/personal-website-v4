@@ -1,11 +1,11 @@
 import DateFormatter from '../components/date-formatter'
-import PostTitle from './page-title'
+import PageTitle from './page-title'
 import Image from 'next/image'
 
 export default function PostHeader({ title, coverImage, date }) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <PageTitle>{title}</PageTitle>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 mt-8">
         <div className="flex justify-center">
           <a href="/">

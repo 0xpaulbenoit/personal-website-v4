@@ -1,6 +1,5 @@
 ---
 title: "CyberQualify - Cybersecurity Interview Platform "
-excerpt: ""
 date: '2021-06-10'
 coverImage: "/blog/cyberqualify.jpg"
 ogImage:

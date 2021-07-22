@@ -1,6 +1,5 @@
 ---
 title: "How to Migrate from AWS S3 to DigitalOcean Spaces in Rails 6"
-excerpt: ""
 date: '2020-04-20'
 coverImage: "/blog/remotecyberwork.jpg"
 ogImage:
