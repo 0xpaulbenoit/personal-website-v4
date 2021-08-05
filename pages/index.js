@@ -44,13 +44,13 @@ export default function Home({ featuredPosts }) {
                     I build cybersecurity software while traveling and working remotely. 
                   </p>
                   <p className="text-gray-700 text-lg mt-2">
-                    I spent most of my free time outdoors.
+                    In my free time, I like to climb mountains.
                   </p>
                   <div>
                     <a href="mailto:paul@paulbenoit.com"
                           className="text-blue-500 hover:underline text-gray-700 text-lg mt-2 float-right mb-3">Contact me</a>
                     <a href="https://paul-benoit-public.s3.amazonaws.com/paul_benoit_resume.pdf"
-                      className="text-blue-500 hover:underline text-gray-700 text-lg mt-2 float-left mb-3">Hire me?</a>
+                      className="text-blue-500 hover:underline text-gray-700 text-lg mt-2 float-left mb-3">Resume</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function Home({ featuredPosts }) {
             />
             <IgPhoto
               src="/ig/mt.jpeg"
-              image_url="https://wwwclimbing.instagram.com/p/CKxXy84pnWM"
+              image_url="https://www.instagram.com/p/CKxXy84pnWM"
               alt_text="hiking in Montana"
             />
             <IgPhoto
