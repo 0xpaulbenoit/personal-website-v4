@@ -4,6 +4,8 @@ import backgroundPic from '../public/background.jpeg'
 import profilePic from '../public/paul.jpg'
 import { getFeaturedPosts } from '../lib/api'
 import PostPreview from '../components/post-preview'
+import IgPhoto from '../components/ig-photo'
+import Footer from '../components/footer'
 
 
 export default function Home({ featuredPosts }) {
@@ -36,23 +38,20 @@ export default function Home({ featuredPosts }) {
                     Greetings,
                   </p>
                   <p className="text-gray-700 text-lg mt-2">
-                    My name is Paul Benoit, and I build cybersecurity software.
+                    My name is Paul Benoit.
                   </p>
                   <p className="text-gray-700 text-lg mt-2">
-                    I work as a Staff Software Engineer for the 
-                    <a href="https://www.paloaltonetworks.com/cortex/managed-threat-hunting"
-                      className="pl-1 pr-1 text-blue-500 hover:underline">
-                      Managed Threat Hunting
-                    </a>
-                    team at Palo Alto Networks.
+                    I build cybersecurity software while traveling and working remotely. 
                   </p>
                   <p className="text-gray-700 text-lg mt-2">
-                    Here is
-                    <a href="https://paul-benoit-public.s3.amazonaws.com/paul_benoit_resume.pdf"
-                      className="text-blue-500 hover:underline pl-1">my resume.</a>
+                    I spent most of my free time outdoors.
+                  </p>
+                  <div>
                     <a href="mailto:paul@paulbenoit.com"
-                      className="text-blue-500 hover:underline pl-1">Contact me</a>
-                  </p>
+                          className="text-blue-500 hover:underline text-gray-700 text-lg mt-2 float-right mb-3">Contact me</a>
+                    <a href="https://paul-benoit-public.s3.amazonaws.com/paul_benoit_resume.pdf"
+                      className="text-blue-500 hover:underline text-gray-700 text-lg mt-2 float-left mb-3">Hire me?</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +87,61 @@ export default function Home({ featuredPosts }) {
             </div>
           </div>
         </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+          <div className="text-center mb-4">
+            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+              From The Gram
+            </h2>
+            <p className="mt-2 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-3">
+              An unrealistic highlight reel
+            </p>
+          </div>
+          <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+            <IgPhoto
+              src="/ig/rainier2.jpeg"
+              image_url="https://www.instagram.com/p/CRNqfz-pIv-/"
+              alt_text="me climbing rainier"
+            />
+            <IgPhoto
+              src="/ig/mt.jpeg"
+              image_url="https://wwwclimbing.instagram.com/p/CKxXy84pnWM"
+              alt_text="hiking in Montana"
+            />
+            <IgPhoto
+              src="/ig/whistler.jpeg"
+              image_url="https://www.instagram.com/p/CKxXy84pnWM"
+              alt_text="my girlfriend and I in Whistler, Canada"
+            />
+            <IgPhoto
+              src="/ig/w2.jpg"
+              image_url="https://www.instagram.com/p/B7hjYWVpol7/"
+              alt_text="Climbing Mt Washington in a blizzard"
+            />
+            <IgPhoto
+              src="/ig/horse.jpeg"
+              image_url="https://www.instagram.com/p/B2b7dANgMLU/"
+              alt_text="Riding a horse in Arizona"
+            />
+            <IgPhoto
+              src="/ig/internet.jpeg"
+              image_url="https://www.instagram.com/p/ByTRm_2gz0L/"
+              alt_text="Me pointing at the Internet store"
+            />
+            <IgPhoto
+              src="/ig/zion.jpeg"
+              image_url="https://www.instagram.com/p/BVVjnV0lMLF/"
+              alt_text="Me walking through the Zion Narrows"
+            />
+            <IgPhoto
+              src="/ig/sweden.jpeg"
+              image_url="https://www.instagram.com/p/BeBCxN2FdbC/"
+              alt_text="My friend and I dogsledding in Northern Sweden"
+            />
+          </ul>
+        </div>
       </main>
+      <Footer />
     </div>
   )
 }

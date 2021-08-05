@@ -1,6 +1,5 @@
 import DateFormatter from '../components/date-formatter'
 import PageTitle from './page-title'
-import Image from 'next/image'
 
 export default function PostHeader({ title, coverImage, date }) {
   return (
