@@ -1,6 +1,6 @@
 ---
 title: "How I Built RemoteCyberWork"
-date: '2020-04-20'
+date: '2021-04-20'
 coverImage: "/blog/remotecyberwork.jpg"
 ogImage:
   url: "/blog/remotecyberwork.jpg"

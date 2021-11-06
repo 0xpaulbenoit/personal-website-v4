@@ -11,7 +11,7 @@ DigitalOcean Spaces is a convenient way to store files. It might be cheaper than
 ### Generate Spaces API Keys
 
 The first step is to generate DigitalOcean Spaces API keys to use in your Rails 6 app. In DigitalOcean, click on *API* in the left pane, then click *Generate New Key* next to 'Spaces access keys'
-![DigitalOcean Spaces Screenshot2](/images/spaces1.png)
+![DigitalOcean Spaces Screenshot2](/blog/spaces1.png)
 
 Write these keys down and save them for later.
 
@@ -46,7 +46,7 @@ The *access_key_id* and *secret_access_key* are what you generated in the previo
 *endpoint* is from the URL of your Space. You can find it under the title of your Space if you remove the project. Include *https://* in the config field.
 *region* can also be found in the URL of your Space.
 *bucket* is the name of your Space.
-![DigitalOcean Spaces Screenshot](/images/spaces-endpoint.png)
+![DigitalOcean Spaces Screenshot](/blog/spaces-endpoint.png)
 
 If you look closely, you can see a single space character before *aws:* and before *digitalocean:*. That space cost me an hour of my life. I'm not bitter.
 

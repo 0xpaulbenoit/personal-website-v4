@@ -12,9 +12,9 @@ export default function Index({ allPosts }) {
         <Head>
           <PageTitle>Blog Posts</PageTitle>
         </Head>
-        <div class="relative bg-gray-50 pt-10 pb-10 px-4 sm:px-6 lg:pt-15 lg:pb-15 lg:px-8">
-          <div class="relative max-w-7xl mx-auto">
-            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+        <div className="relative bg-gray-50 pt-10 pb-10 px-4 sm:px-6 lg:pt-15 lg:pb-15 lg:px-8">
+          <div className="relative max-w-7xl mx-auto">
+            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
               {allPosts.map((post) => (
                 <PostPreview
                   key={post.slug}
