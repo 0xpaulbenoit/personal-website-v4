@@ -36,7 +36,7 @@ export default function About() {
                 </div>
                 <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                   <p>I'm semi-nomadic, spending most of my time bouncing between mountain towns in the United States. When I'm not working, I'm usually climbing mountains.</p>
-                  <p>Here is my <a href="https://paul-benoit-public.s3.amazonaws.com/paul_benoit_resume.pdf" className="text-blue-500 hover:underline">Resume</a></p>
+                  <p>Here is my <a href="https://s3.amazonaws.com/paulbenoit.com/paul_benoit_resume.pdf" className="text-blue-500 hover:underline">Resume</a></p>
                   <p><a href="mailto:paul@paulbenoit.com" className="text-blue-500 hover:underline">Contact me</a></p>
                 </div>
               </div>
