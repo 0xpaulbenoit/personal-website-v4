@@ -56,6 +56,11 @@ export default function About() {
           </div>
           <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
             <IgPhoto
+              src="/ig/canada.jpeg"
+              image_url="https://www.instagram.com/p/CTffW0RHKLr/"
+              alt_text="Mt Nibloc in Canada"
+            />
+            <IgPhoto
               src="/ig/rainier2.jpeg"
               image_url="https://www.instagram.com/p/CRNqfz-pIv-/"
               alt_text="me climbing rainier"
@@ -64,11 +69,6 @@ export default function About() {
               src="/ig/mt.jpeg"
               image_url="https://www.instagram.com/p/CKxXy84pnWM"
               alt_text="hiking in Montana"
-            />
-            <IgPhoto
-              src="/ig/whistler.jpeg"
-              image_url="https://www.instagram.com/p/CKxXy84pnWM"
-              alt_text="my girlfriend and I in Whistler, Canada"
             />
             <IgPhoto
               src="/ig/w2.jpg"
