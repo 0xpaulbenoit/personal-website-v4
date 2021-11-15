@@ -3,11 +3,11 @@ title: "Ethernaut - Ethereum CTF Walkthrough"
 date: '2021-11-14'
 coverImage: "/blog/astrodog.jpeg"
 ogImage:
-  url: "/blog/remotecyberwork.jpg"
+  url: "/blog/astrodog.jpeg"
 ---
 
 
-This is a walkthrough of Ethernaut, an Ethereum security CTF game. It's a good starting place for learning about Ethereum security. I think it's the most beginner-friendly Ethereum security CTF.
+This is a walkthrough of [Ethernaut](https://ethernaut.openzeppelin.com/), an Ethereum security CTF game. It's a good starting place for learning about Ethereum security. I think it's the most beginner-friendly Ethereum security CTF.
 
 ### Setup
 
