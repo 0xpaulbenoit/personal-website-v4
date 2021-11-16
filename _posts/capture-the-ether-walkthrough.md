@@ -11,7 +11,7 @@ Capture the Ether is an Ethereum Security CTF. I would recommend starting with [
 
 ## Setup
 
-You should have a dedicated [Metamask](https://metamask.io/) wallet for testing setup in your browser. To play Capture the Ether, we need to set Metamask to use the Ropsten Test Network and we need to get some test ETH on Ropsten. There are several faucets where you can request Ropsten ETH. [This](https://faucet.dimensions.network/) is the one I used.
+You should have a dedicated [Metamask](https://metamask.io/) wallet for testing. To play Capture the Ether, we need to set Metamask to use the Ropsten Test Network and we need to get some test ETH on Ropsten. There are several faucets where you can request Ropsten ETH. [This](https://faucet.dimensions.network/) is the one I used.
 
 Adding to the complexity of the CTF, there are many tools you can use to complete each challenge. In this walkthrough we're mainly going to be using [Remix](https://remix.ethereum.org/).
 

@@ -1,5 +1,5 @@
 ---
-title: "Ethernaut - Ethereum CTF Walkthrough"
+title: "Ethernaut - Ethereum CTF Walkthrough Part 1"
 date: '2021-11-14'
 coverImage: "/blog/astrodog.jpeg"
 ogImage:
