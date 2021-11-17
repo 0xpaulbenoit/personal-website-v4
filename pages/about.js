@@ -3,7 +3,7 @@ import IgPhoto from '../components/ig-photo'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import aboutPic from '../public/about.jpg'
-
+import Head from 'next/head'
 
 
 export default function About() {
