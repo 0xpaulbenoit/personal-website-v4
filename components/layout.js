@@ -6,6 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Meta />
+      <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
       <div className="min-h-screen">
         <Header />
         <main>{children}</main>

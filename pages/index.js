@@ -4,11 +4,20 @@ import { getAllPosts } from '../lib/api'
 import PostPreview from '../components/post-preview'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Head from 'next/head'
 
 
 export default function Home({ allPosts }) {
   return (
     <div>
+      <Head>
+        <title>Paul Benoit</title>
+        <meta
+          name="description"
+          content="Paul Benoit's blog"
+        />
+        <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
+      </Head>
       <Header />
       <main>
         <div className="relative">

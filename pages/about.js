@@ -9,6 +9,9 @@ import aboutPic from '../public/about.jpg'
 export default function About() {
   return (
     <div>
+      <Head>
+        <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
+      </Head>
       <Header />
       <main>
       <div className="bg-white overflow-hidden">

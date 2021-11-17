@@ -15,7 +15,7 @@ You need a wallet like [Metamask](https://metamask.io/) to play Ethernaut. I rec
 
 Select the Rinkeby Test Network as your network in Metamask. Rinkeby is a proof-of-authority blockchain, used for testing. It's completely separate from the mainnet where people conduct real Ethereum transactions.
 
-To complete the Ethernaut CTF challenges, you also need some Rinkeby ETH to fund your transactions. You can get some for free from [this faucet](https://faucet.rinkeby.io/). The faucet can be unreliable and go offline at times, so be patient and keep trying if it doesn't work.
+To complete the Ethernaut CTF challenges, you also need some Rinkeby ETH to fund your transactions. You can get some for free from [this faucet](https://faucet.rinkeby.io/). The faucet can be unreliable and go offline at times. If it's down try the [Chainlink faucet](https://faucets.chain.link/rinkeby).
 
 ### 0. Hello Ethernaut
 
