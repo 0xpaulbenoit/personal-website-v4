@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
+        <script src="https://bloc-party-polished.paulbenoit.com/script.js" data-site="DGRLZZDQ" defer></script>
       </Head>
       <Header />
       <main>

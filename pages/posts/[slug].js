@@ -29,7 +29,7 @@ export default function Post({ post, morePosts, preview }) {
                   {post.title}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
-                <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
+                <script src="https://bloc-party-polished.paulbenoit.com/script.js" data-site="DGRLZZDQ" defer></script>
               </Head>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 mb-8">
                 <a

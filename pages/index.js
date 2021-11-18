@@ -16,7 +16,7 @@ export default function Home({ allPosts }) {
           name="description"
           content="Paul Benoit's blog"
         />
-        <script src="https://cdn.usefathom.com/script.js" data-site="DGRLZZDQ" defer></script>
+        <script src="https://bloc-party-polished.paulbenoit.com/script.js" data-site="DGRLZZDQ" defer></script>
       </Head>
       <Header />
       <main>
