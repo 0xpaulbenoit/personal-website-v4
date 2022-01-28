@@ -28,7 +28,7 @@ export default function About() {
                     <Image
                       className="rounded-lg shadow-lg object-cover object-center"
                       src={aboutPic}
-                      alt="Me in the Canadian Rockies"
+                      alt="Headshot"
                     />
                 </figure>
               </div>
