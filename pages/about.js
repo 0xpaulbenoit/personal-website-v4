@@ -35,12 +35,12 @@ export default function About() {
             </div>
             <div className="mt-8 lg:mt-0">
                 <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                  <p className="text-lg text-gray-500">I'm a Software Engineer at Palo Alto Networks.</p>
+                  <p className="text-lg text-gray-500">I'm a Security Engineer at Block (formerly Square).</p>
                 </div>
                 <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                  <p>I'm semi-nomadic, spending most of my time bouncing between mountain towns in the United States. When I'm not working, I'm usually climbing mountains.</p>
+                  <p>Send me an <a href="mailto:paul@paulbenoit.com" className="text-blue-500 hover:underline">email</a> if you want to talk about cloud security, mountaineering, or anything else interesting.</p>
                   <p>Here is my <a href="https://s3.amazonaws.com/paulbenoit.com/paul_benoit_resume.pdf" className="text-blue-500 hover:underline">Resume</a></p>
-                  <p><a href="mailto:paul@paulbenoit.com" className="text-blue-500 hover:underline">Contact me</a></p>
+                  <p></p>
                 </div>
               </div>
           </div>
@@ -58,6 +58,11 @@ export default function About() {
             </p>
           </div>
           <ul role="list" className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+          <IgPhoto
+              src="/ig/canyonlands.jpeg"
+              image_url="https://www.instagram.com/p/Ca6V5SRrPNL/"
+              alt_text="Standing on a cliff in Canyonlands National Park"
+            />
             <IgPhoto
               src="/ig/canada.jpeg"
               image_url="https://www.instagram.com/p/CTffW0RHKLr/"
@@ -82,11 +87,6 @@ export default function About() {
               src="/ig/horse.jpeg"
               image_url="https://www.instagram.com/p/B2b7dANgMLU/"
               alt_text="Riding a horse in Arizona"
-            />
-            <IgPhoto
-              src="/ig/internet.jpeg"
-              image_url="https://www.instagram.com/p/ByTRm_2gz0L/"
-              alt_text="Me pointing at the Internet store"
             />
             <IgPhoto
               src="/ig/zion.jpeg"
