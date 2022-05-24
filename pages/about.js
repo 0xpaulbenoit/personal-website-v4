@@ -35,12 +35,13 @@ export default function About() {
             </div>
             <div className="mt-8 lg:mt-0">
                 <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                  <p className="text-lg text-gray-500">I'm a Security Engineer at Block (formerly Square).</p>
+                  <p className="text-lg text-gray-500">I'm Paul Benoit. I currently work at Block (formerly Square) doing AWS Security.</p>
                 </div>
                 <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                  <p>Send me an <a href="mailto:paul@paulbenoit.com" className="text-blue-500 hover:underline">email</a> if you want to talk about cloud security, mountaineering, or anything else interesting.</p>
+                  <p>I enjoy talking about cloud security, SaaS, and cybersecurity hiring.</p>
+                  <p>Outside of work and tech-related hobbies, I spend much of my free time climbing mountains.</p>
                   <p>Here is my <a href="https://s3.amazonaws.com/paulbenoit.com/paul_benoit_resume.pdf" className="text-blue-500 hover:underline">Resume</a></p>
-                  <p></p>
+                  <p><a href="mailto:paul@paulbenoit.com" className="text-blue-500 hover:underline">Contact me</a></p>
                 </div>
               </div>
           </div>
